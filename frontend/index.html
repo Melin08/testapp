@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&D 5e Character Sheet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dndDark: '#07090e',
+            dndSurface: '#0d121d',
+            dndCard: '#131b2a',
+            dndInput: '#090e17',
+            dndHover: '#1c273c',
+            dndBorder: '#1e293b',
+            dndBorderMedium: '#2a3a54',
+            dndRed: '#ef4444',
+            dndRedHover: '#dc2626',
+            dndBlue: '#38bdf8',
+            dndPurple: '#c084fc',
+            dndEmerald: '#10b981',
+            dndAmber: '#f59e0b',
+          }
+        }
+      }
+    };
+  </script>
+  </head>
+<body class="bg-[#07090e] text-slate-100 min-h-screen antialiased selection:bg-red-500 selection:text-white">
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
